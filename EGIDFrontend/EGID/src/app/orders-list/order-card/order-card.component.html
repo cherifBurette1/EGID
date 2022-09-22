@@ -1,0 +1,31 @@
+<div *ngFor="let ordr of orders">
+    <div class='card'>
+        <div class='card-header'>
+        </div>
+        <div class='card-body'>
+          <div class='row'>
+            <div class='col-md-8'>
+              <div class='row'>
+                <div class='col-md-4 property'>Broker name:</div>
+                <div class='col-md-8'>{{ordr.brokerName}}</div>
+              </div>
+              <div class='row'>
+                <div class='col-md-4 property'>Person name:</div>
+                <div class='col-md-8'>{{ordr.personName}}</div>
+              </div>
+              <div class='row'>
+                <div class='col-md-4 property'>quantity:</div>
+                <div class='col-md-8'>{{ordr.quantity}}</div>
+              </div>
+              <div class='row'>
+                <div class='col-md-4 property'>Commission:</div>
+                <div class='col-md-8'>{{ordr.commission}}</div>
+              </div>
+              <div class='row'>
+                <div class='col-md-4 property'>price:</div>
+                <div class='col-md-8'>{{ordr.price| currency:'EGP'}}</div>
+                <div class='row'>
+              </div>
+              </div>
+      </div>
+    </div>

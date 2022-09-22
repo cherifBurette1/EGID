@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Configurations>Debug;Release;NoMigrationsDebug</Configurations>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Hangfire.Core" Version="1.7.11" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+		<PackageReference Include="MiniProfiler.AspNetCore" Version="4.1.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Common\EGID.Ground\EGID.Ground.csproj" />
+	  <ProjectReference Include="..\EGID.Data\EGID.Data\EGID.Data.csproj" />
+	  <ProjectReference Include="..\EGID.DTO\EGID.DTO.csproj" />
+	</ItemGroup>
+</Project>

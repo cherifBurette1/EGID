@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "x8MdZNPYKiSc2nCMJrFF4qbwoX9SJxngAu2jXUHP0WD0TSvUfTPWN9Ph/U+Q+kOuyFLemFpPGiE08SrHcN/B1w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dell\\Desktop\\EGID\\EGIDBackend\\Core\\EGID.DTO\\EGID.DTO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dell\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

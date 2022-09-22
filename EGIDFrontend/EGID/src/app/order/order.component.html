@@ -1,0 +1,28 @@
+<div class="ngForm">
+    <form #form="ngForm" (submit)="InsertRecord()" autocomplete="off">
+      <div class="form-group">
+        <label>Stock name</label>
+        <input name="name"  class="form-control" [defaultValue]="stockName" [disabled]="true">
+      </div>
+      <div class="form-group">
+        <label>Price</label>
+        <input name="price" class="form-control" [defaultValue]="price" [disabled]="true">
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          <label>Please Select a Broker</label>
+          <select name="Broker" #BRKRId="ngModel" required [class.is-invalid]="BRKRId.invalid && BRKRId.touched" [(ngModel)]="brokr" class="form-select">
+            <option *ngFor="let brkr of broker" [value]="brkr.id">{{brkr.name}}</option>
+        </select>
+        <small class="text-danger" [class.d-none]="BRKRId.valid || BRKRId.untouched">Please choose a broker</small>
+          </div>
+          <div class="col">
+            <label>Please Select a person</label>
+          <select name="Person" #PRSNId="ngModel" [(ngModel)]="person" class="form-select" [(ngModel)]="persn">
+            <option *ngFor="let prsn of person" [value]="prsn.id">{{[prsn.name]}}</option>
+          </select>
+        </div>
+      </div>
+          <button type="submit" class="btn btn-default btn-lg btn-block btn-xl" >Add Order</button>
+    </form>
