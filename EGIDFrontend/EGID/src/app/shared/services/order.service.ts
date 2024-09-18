@@ -28,7 +28,8 @@ export class OrderService {
       "price": price,
     }
    this.http.post(`${this.rootURL}order`, data
-           )};
+           ).subscribe();
+    }
   }
 
 
